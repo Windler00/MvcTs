@@ -1,4 +1,4 @@
-﻿import { test2 } from "./dist/test2.js"
+﻿import { test2 } from "../dist/test2.js"
 
 function test() {
     console.log("test");

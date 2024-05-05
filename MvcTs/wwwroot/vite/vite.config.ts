@@ -5,7 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
+    sourcemap: true,
     rollupOptions: {
+      input: {
+        main: './src/main.tsx',
+        test: './src/test.tsx',
+      },
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].[ext]',

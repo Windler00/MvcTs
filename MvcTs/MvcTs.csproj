@@ -7,9 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\esbuild\src\test.tsx" />
     <Content Remove="wwwroot\js\index.ts" />
     <Content Remove="wwwroot\js\test.ts" />
     <Content Remove="wwwroot\js\test2.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\esbuild\src\test.tsx" />
   </ItemGroup>
 
 </Project>

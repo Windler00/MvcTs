@@ -5,7 +5,7 @@ const config = [
     target: ['chrome58', 'firefox57', 'safari11', 'edge16'],
     outdir: './build/',
     tsconfig: './tsconfig.json',
-    write: true,
+    allowOverwrite: true,
     loader: {
       '.png': 'file',
       '.jpg': 'file',

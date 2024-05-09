@@ -9,8 +9,13 @@ let ctx = await esbuild.context({
     target: ['chrome58', 'firefox57', 'safari11', 'edge16'],
     outdir: './build/',
     tsconfig: './tsconfig.json',
-    write: true
-    //outfile: './build/bundle.js',
+    write: true,
+    loader: {
+      '.png': 'file',
+      '.jpg': 'file',
+      '.svg': 'file',
+      '.css': 'css'
+    },
   })
   
   await ctx.watch()

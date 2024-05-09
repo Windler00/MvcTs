@@ -17,4 +17,9 @@
     <TypeScriptCompile Include="wwwroot\esbuild\src\test.tsx" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\webpack\" />
+    <Folder Include="wwwroot\cra\" />
+  </ItemGroup>
+
 </Project>

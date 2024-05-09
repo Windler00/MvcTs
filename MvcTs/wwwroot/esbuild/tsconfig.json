@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "target": "ESNext",
+      "target": "ES6",
       "module": "ESNext",
       "jsx": "react",
       "strict": true,
@@ -8,7 +8,8 @@
       "allowSyntheticDefaultImports": true,
       "noEmit": true,
       "isolatedModules": true,
-      "lib": ["DOM", "DOM.Iterable", "ESNext"]
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "plugins": [{ "name": "typescript-plugin-css-modules" }]
     },
     "include": ["src"]
   }

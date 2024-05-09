@@ -14,7 +14,9 @@
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "esbuild": "^0.20.2",
-    "typescript": "^5.4.5"
+    "esbuild-loader": "^4.1.0",
+    "typescript": "^5.4.5",
+    "typescript-plugin-css-modules": "^5.1.0"
   },
   "dependencies": {
     "react": "^18.3.1",

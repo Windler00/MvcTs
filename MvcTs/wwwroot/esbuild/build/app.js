@@ -23526,16 +23526,24 @@
   var import_react2 = __toESM(require_react());
   var import_react_dom = __toESM(require_react_dom());
 
-  // src/test.tsx
+  // src/test/test.tsx
   var import_react = __toESM(require_react());
+
+  // src/test/test.module.css
+  var testFont = "test_testFont";
+
+  // src/test/test.tsx
   var Test = () => {
-    return /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h1", null, "Test"));
+    return /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h1", { className: testFont }, "Test"));
   };
   var test_default = Test;
 
+  // src/app.module.css
+  var fontTest = "app_fontTest";
+
   // src/app.tsx
   function App() {
-    return /* @__PURE__ */ import_react2.default.createElement("div", null, /* @__PURE__ */ import_react2.default.createElement("h1", null, "Hello, React!"), /* @__PURE__ */ import_react2.default.createElement(test_default, null));
+    return /* @__PURE__ */ import_react2.default.createElement("div", null, /* @__PURE__ */ import_react2.default.createElement("h1", { className: fontTest }, "Hello, React!"), /* @__PURE__ */ import_react2.default.createElement(test_default, null));
   }
   import_react_dom.default.render(/* @__PURE__ */ import_react2.default.createElement(App, null), document.getElementById("root"));
 })();

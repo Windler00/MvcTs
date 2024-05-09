@@ -1,12 +1,13 @@
 ﻿import * as esbuild from 'esbuild'
 import config from "./config.mjs"
 
-let ctx = await esbuild.context(
-  config,
-  {
-    minify: false,
-    sourcemap: true,
-  })
+const devConfig = {
+  ...config,
+  minify: false,
+  sourcemap: true,
+}
+
+let ctx = await esbuild.context(devConfig)
 
 await ctx.watch()
 console.log('watching...')

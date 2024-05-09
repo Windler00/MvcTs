@@ -19,10 +19,10 @@ const deleteMapFiles = function (path) {
 
 deleteMapFiles('./build/');
 
-await esbuild.build(
-    config,
-    {
-        minify: true,
-        sourcemap: false,
-    }
-)
+const prodConfig = {
+    ...config,
+    minify: true,
+    sourcemap: false,
+  }
+
+await esbuild.build(prodConfig)

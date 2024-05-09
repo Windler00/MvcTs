@@ -1,3 +1,5 @@
+import entryPoints from "./entry-points.mjs"
+
 const config = [
   {
     entryPoints,

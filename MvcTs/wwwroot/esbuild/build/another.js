@@ -23578,4 +23578,3 @@ react-dom/cjs/react-dom.development.js:
    * @license Modernizr 3.0.0pre (Custom Build) | MIT
    *)
 */
-//# sourceMappingURL=another.js.map

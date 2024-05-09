@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./config/config.mjs",
+    "build": "node ./config/build-config.mjs",
     "dev": "node ./config/dev-config.mjs"
   },
   "author": "",

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/test/test.module.css", "../src/app.module.css"],
-  "sourcesContent": [".testFont{\r\n    font-size: 60px;\r\n}", ".fontTest{\r\n    font-size: 80px;\r\n}"],
-  "mappings": ";AAAA,CAACA;AACG,aAAW;AACf;;;ACFA,CAACC;AACG,aAAW;AACf;",
-  "names": ["testFont", "fontTest"]
-}

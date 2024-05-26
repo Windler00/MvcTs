@@ -26,6 +26,7 @@
     }
 
     // Метод для отписки от изменений состояния
+    // Вызвать функцию возвращенную методом subscribe
     unsubscribe(observer) {
         this.observers = this.observers.filter(obs => obs !== observer);
     }

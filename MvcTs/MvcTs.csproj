@@ -25,12 +25,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Scripts\src\index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\src_bundled\index.ts" />
     <TypeScriptCompile Include="wwwroot\esbuild\src\test.tsx" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Scripts\src\" />
-    <Folder Include="Scripts\src_bundled\" />
+    <Folder Include="wwwroot\dist\" />
   </ItemGroup>
 
 </Project>

@@ -11,15 +11,17 @@
 
 
 <div id="root"></div>
-<div id="another"></div>
+@* <div id="another"></div> *@
 
 <div>
     <span id="counter"></span>
     <button onclick="btnClicked()">increment</button>
 </div>
 
-<script type="module" src="~/esbuild/build/app.js"></script>
-<script type="module" src="~/esbuild/build/another.js"></script>
+@* <script type="module" src="~/esbuild/build/app.js"></script>
+<script type="module" src="~/esbuild/build/another.js"></script> *@
+
+<script type="module" src="~/dist/index.js"></script>
 
 <script src="~/js/state.js"></script>
 

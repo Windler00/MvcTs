@@ -13,5 +13,27 @@
 <div id="root"></div>
 <div id="another"></div>
 
+<div>
+    <span id="counter"></span>
+    <button onclick="btnClicked()">increment</button>
+</div>
+
 <script type="module" src="~/esbuild/build/app.js"></script>
 <script type="module" src="~/esbuild/build/another.js"></script>
+
+<script src="~/js/state.js"></script>
+
+<script>
+    const counterState = new Observable(0);
+
+    counterState.subscribe(newState => {
+        console.log(newState);
+        let counter = document.getElementById("counter");
+        counter.innerHTML = newState;
+    });
+
+    function btnClicked(event) { 
+        console.log("test");
+        counterState.state++;
+    }
+</script>

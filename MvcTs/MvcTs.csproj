@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\cra\**" />
+    <Compile Remove="wwwroot\webpack\**" />
+    <Content Remove="wwwroot\cra\**" />
+    <Content Remove="wwwroot\webpack\**" />
+    <EmbeddedResource Remove="wwwroot\cra\**" />
+    <EmbeddedResource Remove="wwwroot\webpack\**" />
+    <None Remove="wwwroot\cra\**" />
+    <None Remove="wwwroot\webpack\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\esbuild\src\test.tsx" />
     <Content Remove="wwwroot\js\index.ts" />
     <Content Remove="wwwroot\js\test.ts" />
@@ -18,8 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\webpack\" />
-    <Folder Include="wwwroot\cra\" />
+    <Folder Include="Scripts\src\" />
+    <Folder Include="Scripts\src_bundled\" />
   </ItemGroup>
 
 </Project>

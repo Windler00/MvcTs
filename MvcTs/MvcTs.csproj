@@ -7,12 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Scripts\src\**" />
+    <Compile Remove="Scripts\std_src\**" />
     <Compile Remove="wwwroot\cra\**" />
     <Compile Remove="wwwroot\webpack\**" />
+    <Content Remove="Scripts\src\**" />
+    <Content Remove="Scripts\std_src\**" />
     <Content Remove="wwwroot\cra\**" />
     <Content Remove="wwwroot\webpack\**" />
+    <EmbeddedResource Remove="Scripts\src\**" />
+    <EmbeddedResource Remove="Scripts\std_src\**" />
     <EmbeddedResource Remove="wwwroot\cra\**" />
     <EmbeddedResource Remove="wwwroot\webpack\**" />
+    <None Remove="Scripts\src\**" />
+    <None Remove="Scripts\std_src\**" />
     <None Remove="wwwroot\cra\**" />
     <None Remove="wwwroot\webpack\**" />
   </ItemGroup>
@@ -25,16 +33,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Scripts\src\index.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
     <TypeScriptCompile Include="Scripts\src_bundled\index.ts" />
     <TypeScriptCompile Include="wwwroot\esbuild\src\test.tsx" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Scripts\src\" />
     <Folder Include="wwwroot\dist\" />
   </ItemGroup>
 
